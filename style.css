@@ -1,0 +1,81 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+}
+
+
+.galleryPreviewContainer {
+width:400px;
+  height:200px;
+  overflow:hidden; /* So the sliding bit doesn't stick out. */
+  margin:0 auto;
+}
+.galleryPreviewImage{
+width:1200px;
+overflow:hidden;
+  -webkit-transition:all 1.0s ease-in-out;
+  -moz-transition:all 1.0s ease-in-out;
+  -o-transition:all 1.0s ease-in-out;
+  transition:all 1.0s ease-in-out;
+}
+.galleryPreviewImage img {
+	
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	margin:0;
+	float:left;
+	padding:0;
+	
+}
+
+.galleryPreviewArrows a {
+	font-family: Arial;
+	font-size: 30px;
+	background: white;
+	color:black;
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	margin-top: -35px;
+}
+a.nextSlideArrow {
+	right: 600px;
+	left: auto;
+}
+.galleryPreviewArrows a:hover {
+	background: black;
+	color:white;
+	transition: 0.7s;
+}
+.galleryNavigationBullets {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	float: left;
+}
+.galleryNavigationBullets span {
+	display: none;
+}
+.galleryNavigationBullets a {
+	width: 100px;
+	height: 50px;
+	display: inline-block;
+	margin-right: 5px;
+	background: #ddd;
+}
+.galleryNavigationBullets a:hover,
+.galleryNavigationBullets a.active {
+	background: #555;
+}
